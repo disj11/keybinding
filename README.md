@@ -4,10 +4,16 @@ Autohotkey: Windows 키 매핑 변경
 
 ## 키 매핑
 
-* `Esc`: `CapsLock`
-* `CapsLock`: `Esc`
-* `CapsLock` 홀딩: `Ctrl`
-* `jk` 동시입력: `Esc`
+|Key|Binding|
+|---|-------|
+|`Esc`|`CapsLock`|
+|`CapsLock`|`Esc`|
+|`CapsLock` 홀딩|`Ctrl`|
+|`CapsLock` 홀딩 + `h`|`Left`|
+|`CapsLock` 홀딩 + `j`|`Down`|
+|`CapsLock` 홀딩 + `k`|`Up`|
+|`CapsLock` 홀딩 + `l`|`Right`|
+|`jk` 동시 입력|`Esc`|
 
 ## Windows 시작 시 자동 실행
 
