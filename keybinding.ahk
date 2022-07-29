@@ -22,7 +22,7 @@ Return
     cDown =
 Return
 
-#If
+#If cDown
     h::Left
     j::Up
     k::Down
