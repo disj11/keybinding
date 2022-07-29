@@ -22,4 +22,10 @@ Return
     cDown =
 Return
 
+#If
+    h::Left
+    j::Up
+    k::Down
+    l::Right
+
 Esc::CapsLock
