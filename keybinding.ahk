@@ -16,10 +16,10 @@ Return
 Return
 
 *CapsLock up::
-    If ((A_TickCount - cDown) < 400)  ; Modify press time as needed (milliseconds)
-        Send {Blind}{Ctrl Up}{Esc}
-    Else
-        Send {Blind}{Ctrl Up}
+    Send {Blind}{Ctrl Up}
+    If ((A_TickCount - cDown) < 300)
+        Send {Blind}{Esc}
+    cDown =
 Return
 
 Esc::CapsLock
