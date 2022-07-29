@@ -11,21 +11,20 @@ Return
 Return
 
 *CapsLock::
-    Send {Blind}{Ctrl Down}
+    Send {Blind}{LCtrl Down}
     cDown := A_TickCount
 Return
 
 *CapsLock up::
-    Send {Blind}{Ctrl Up}
-    If ((A_TickCount - cDown) < 300)
+    Send {LCtrl Up}
+    If ((A_TickCount - cDown) < 200)
         Send {Blind}{Esc}
-    cDown =
 Return
 
-#If cDown
-    h::Left
-    j::Up
-    k::Down
-    l::Right
+#If GetKeyState("CapsLock", "P")
+    *h::Send {Blind}{LCtrl Up}{Left}{LCtrl Down}
+    *j::Send {Blind}{LCtrl Up}{Down}{LCtrl Down}
+    *k::Send {Blind}{LCtrl Up}{Up}{LCtrl Down}
+    *l::Send {Blind}{LCtrl Up}{Right}{LCtrl Down}
 
 Esc::CapsLock
