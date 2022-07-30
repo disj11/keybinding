@@ -1,13 +1,17 @@
-~j::
+j::
     KeyWait, k, D T0.03
     If (ErrorLevel = 0)
-        Send, {Esc}
+        Send {Esc}
+    Else
+        Send j
 Return
 
-~k::
+k::
     KeyWait, j, D T0.03
     If (ErrorLevel = 0)
-        Send, {Esc}
+        Send {Esc}
+    Else
+        Send k
 Return
 
 *CapsLock::
@@ -26,5 +30,6 @@ Return
     *j::Send {Blind}{LCtrl Up}{Down}{LCtrl Down}
     *k::Send {Blind}{LCtrl Up}{Up}{LCtrl Down}
     *l::Send {Blind}{LCtrl Up}{Right}{LCtrl Down}
+#If
 
 Esc::CapsLock
