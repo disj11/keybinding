@@ -14,6 +14,7 @@ Autohotkey: Windows 키 매핑 변경
 |`CapsLock` 홀딩 + `k`|`Up`|
 |`CapsLock` 홀딩 + `l`|`Right`|
 |`jk` 동시 입력|`Esc`|
+|`Windows` + `t`|Open Terminal|
 
 ## Windows 시작 시 자동 실행
 
