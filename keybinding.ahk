@@ -34,12 +34,12 @@ Return
 
 Esc::CapsLock
 
-#IfWinActive ahk_exe Explorer.exe
+#IfWinActive ahk_class CabinetWClass
 #t::
     ActivePath := GetExplorerPath()
     Run, wt -d %ActivePath%
 Return
-#IfWinNotActive ahk_exe Explorer.exe
+#IfWinNotActive ahk_class CabinetWClass
 #t::
     Run, wt
 Return 
