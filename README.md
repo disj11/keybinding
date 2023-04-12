@@ -29,5 +29,6 @@ Autohotkey: Windows 키 매핑 변경
 
 ```
 LWin::LCtrl
-LCtrl::LWin
+LCtrl::LAlt
+LAlt::LWin
 ```
